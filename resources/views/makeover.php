@@ -32,8 +32,10 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="#" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/makeover/hartono-logo.jpg" alt="My Hartono">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/makeover/hartono-logo.jpg" alt="My Hartono"> -->
+        <h1 class="sitename">HARTONO</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -326,6 +328,10 @@
                 "768": {
                   "slidesPerView": 2,
                   "spaceBetween": 30
+                },
+                "992": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 30
                 }
               }
             }
@@ -334,7 +340,7 @@
             
             <div class="swiper-slide">
               <div class="card h-100 border-0 shadow-sm text-center pb-3">
-                <img src="assets/img/makeover/event-fun-run.jpg" class="card-img-top" alt="Fun Run Event" style="height:800px; object-fit:cover;">
+                <img src="assets/img/makeover/event-fun-run.jpg" class="card-img-top" alt="Fun Run Event" style="height:500px; object-fit:cover;">
                 <div class="card-body">
                   <h4 class="card-title mt-2">Fun Run Event</h4>
                   <span class="text-muted d-block mb-3" style="font-size: 14px;">Community Event</span>
@@ -345,7 +351,7 @@
 
             <div class="swiper-slide">
               <div class="card h-100 border-0 shadow-sm text-center pb-3">
-                <img src="assets/img/makeover/event-home-cook-fest.jpg" class="card-img-top" alt="Home Cook Fest" style="height:800px; object-fit:cover;">
+                <img src="assets/img/makeover/event-home-cook-fest.jpg" class="card-img-top" alt="Home Cook Fest" style="height:500px; object-fit:cover;">
                 <div class="card-body">
                   <h4 class="card-title mt-2">Home Cook Fest</h4>
                   <span class="text-muted d-block mb-3" style="font-size: 14px;">Culinary Event</span>
@@ -356,7 +362,7 @@
 
             <div class="swiper-slide">
               <div class="card h-100 border-0 shadow-sm text-center pb-3">
-                <img src="assets/img/makeover/event-booth-experience.jpg" class="card-img-top" alt="Booth Experience" style="height:800px; object-fit:cover;">
+                <img src="assets/img/makeover/event-booth-experience.jpg" class="card-img-top" alt="Booth Experience" style="height:500px; object-fit:cover;">
                 <div class="card-body">
                   <h4 class="card-title mt-2">Booth Experience</h4>
                   <span class="text-muted d-block mb-3" style="font-size: 14px;">Exhibition</span>
@@ -367,7 +373,7 @@
 
             <div class="swiper-slide">
               <div class="card h-100 border-0 shadow-sm text-center pb-3">
-                <img src="assets/img/makeover/event-special-cooking.jpg" class="card-img-top" alt="Special Cooking Demo" style="height:800px; object-fit:cover;">
+                <img src="assets/img/makeover/event-special-cooking.jpg" class="card-img-top" alt="Special Cooking Demo" style="height:500px; object-fit:cover;">
                 <div class="card-body">
                   <h4 class="card-title mt-2">Special Cooking Demo</h4>
                   <span class="text-muted d-block mb-3" style="font-size: 14px;">Cooking Demo</span>
