@@ -28,12 +28,12 @@
           </a>
         </p>
         <p>
-          <a href="" target="_blank">
+          <a href="/makeover" target="_blank">
             <button class="btn btn-primary">Tugas Make Over IG</button>
           </a>
         </p>
         <p>
-          <a href="" target="_blank">
+          <a href="/uts" target="_blank">
             <button class="btn btn-primary">UTS</button>
           </a>
         </p>

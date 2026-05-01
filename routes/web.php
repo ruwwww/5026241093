@@ -59,3 +59,7 @@ Route::get('index', function () {
 
 Route::get('dosen', [DosenController::class, 'index']);
 Route::get('biodata', [DosenController::class, 'biodata']);
+
+Route::get('makeover', function () {
+    return view('makeover');
+});
