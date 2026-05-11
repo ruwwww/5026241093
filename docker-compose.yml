@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: pweb-database
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: pemrogramanweb
+      MYSQL_DATABASE: belajar_laravel
+      MYSQL_USER: admin123
+      MYSQL_PASSWORD: pemrogramanweb
+    ports:
+      - "3310:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
