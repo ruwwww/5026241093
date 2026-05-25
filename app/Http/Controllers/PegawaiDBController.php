@@ -9,7 +9,11 @@ class PegawaiDBController extends Controller
 {
     public function index()
     {
-        $pegawai = \Illuminate\Support\Facades\DB::table('pegawai')->paginate(10);
+        // mengambil data dari table pegawai dengan pagination
+        // $pegawai = DB::table('pegawai')->get(); // jika tidak menggunakan pagination 
+        $pegawai = DB::table('pegawai')->paginate(10);
+
+        // mengirim data pegawai ke view index
         return view('pegawai.index', ['pegawai' => $pegawai]);
     }
 
@@ -20,7 +24,7 @@ class PegawaiDBController extends Controller
 
     public function store(Request $request)
     {
-        \Illuminate\Support\Facades\DB::table('pegawai')->insert([
+        DB::table('pegawai')->insert([
             'pegawai_nama' => $request->nama,
             'pegawai_jabatan' => $request->jabatan,
             'pegawai_umur' => $request->umur,
@@ -31,13 +35,13 @@ class PegawaiDBController extends Controller
 
     public function edit($id)
     {
-        $pegawai = \Illuminate\Support\Facades\DB::table('pegawai')->where('pegawai_id', $id)->get();
+        $pegawai = DB::table('pegawai')->where('pegawai_id', $id)->get();
         return view('pegawai.edit', ['pegawai' => $pegawai]);
     }
 
     public function update(Request $request)
     {
-        \Illuminate\Support\Facades\DB::table('pegawai')->where('pegawai_id', $request->id)->update([
+        DB::table('pegawai')->where('pegawai_id', $request->id)->update([
             'pegawai_nama' => $request->nama,
             'pegawai_jabatan' => $request->jabatan,
             'pegawai_umur' => $request->umur,
@@ -48,7 +52,7 @@ class PegawaiDBController extends Controller
 
     public function hapus($id)
     {
-        \Illuminate\Support\Facades\DB::table('pegawai')->where('pegawai_id', $id)->delete();
+        DB::table('pegawai')->where('pegawai_id', $id)->delete();
         return redirect('/pegawai');
     }
 
@@ -56,9 +60,10 @@ class PegawaiDBController extends Controller
     {
         $cari = $request->cari;
 
-        $pegawai = \Illuminate\Support\Facades\DB::table('pegawai')
+        $pegawai = DB::table('pegawai')
             ->where('pegawai_nama', 'like', "%".$cari."%")
-            ->paginate(10);
+            ->paginate(10)
+            ->withQueryString();
 
         return view('pegawai.index', ['pegawai' => $pegawai]);
     }
