@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\PensilController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -72,3 +73,11 @@ Route::post('/pegawaistore', [PegawaiDBController::class, 'store']);
 Route::get('/pegawaiedit{id}', [PegawaiDBController::class, 'edit']);
 Route::post('/pegawaiupdate', [PegawaiDBController::class, 'update']);
 Route::get('/pegawaihapus/{id}', [PegawaiDBController::class, 'hapus']);
+
+Route::get('/pensil', [PensilController::class, 'index']);
+Route::get('/pensilcari', [PensilController::class, 'cari']);
+Route::get('/pensiltambah', [PensilController::class, 'tambah']);
+Route::post('/pensilstore', [PensilController::class, 'store']);
+Route::get('/pensiledit{id}', [PensilController::class, 'edit']);
+Route::post('/pensilupdate', [PensilController::class, 'update']);
+Route::get('/pensilhapus/{id}', [PensilController::class, 'hapus']);

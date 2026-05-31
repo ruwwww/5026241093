@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <!-- Note PWEB: Title Tergantung akun yang di makeover  -->
-    <title>5026241093 - Abdurrahman Izzuddin Al Faruq</title>
-    <!-- <title>Index - Arsha Bootstrap Template</title> -->
+    <title>PWEB - Pensil Management</title>
 
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -38,17 +36,8 @@
     />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-    <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: Arsha
-  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-  * Updated: Feb 22 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
   <body class="index-page">
     <header id="header" class="header d-flex align-items-center fixed-top">
@@ -61,8 +50,8 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="">Pegawai</a></li>
-            <li><a href="">PR 1 (Diganti tabel dapat apa)</a></li>
+            <li><a href="/pegawai">Pegawai</a></li>
+            <li><a href="/pensil">Pensil</a></li>
             <li><a href="">PR</a></li>
             <li><a href="">Pertemuan 15</a></li>
             <li><a href="">EAS</a></li>
@@ -92,7 +81,6 @@
     <!-- Preloader -->
     <div id="preloader"></div>
 
-    <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -102,7 +90,6 @@
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-    <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
