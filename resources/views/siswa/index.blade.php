@@ -1,4 +1,4 @@
-@extends('template')
+@extends('template_siswa')
 
 @section('title', 'Data Siswa')
 
