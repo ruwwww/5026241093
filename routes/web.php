@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\KeranjangBelanjaController;
+use App\Http\Controllers\NilaiKuliahController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\PensilController;
 use App\Http\Controllers\SiswaController;
@@ -95,3 +96,7 @@ Route::get('/keranjangbelanja', [KeranjangBelanjaController::class, 'index'])->n
 Route::get('/keranjangbelanja/create', [KeranjangBelanjaController::class, 'create'])->name('keranjangbelanja.create');
 Route::post('/keranjangbelanja', [KeranjangBelanjaController::class, 'store'])->name('keranjangbelanja.store');
 Route::delete('/keranjangbelanja/{id}', [KeranjangBelanjaController::class, 'destroy'])->name('keranjangbelanja.destroy');
+
+Route::get('/nilaikuliah', [NilaiKuliahController::class, 'index'])->name('nilaikuliah.index');
+Route::get('/nilaikuliah/create', [NilaiKuliahController::class, 'create'])->name('nilaikuliah.create');
+Route::post('/nilaikuliah', [NilaiKuliahController::class, 'store'])->name('nilaikuliah.store');

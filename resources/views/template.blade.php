@@ -55,7 +55,7 @@
             <li><a href="/keranjangbelanja">Keranjang</a></li>
             <li><a href="">PR</a></li>
             <li><a href="">Pertemuan 15</a></li>
-            <li><a href="">EAS</a></li>
+            <li><a href="/nilaikuliah">Nilai</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
